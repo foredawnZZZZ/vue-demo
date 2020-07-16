@@ -4,16 +4,28 @@
     <!-- <Computed /> -->
     <!-- <Watcher /> -->
     <!-- <ForDemo /> -->
-    <ShowIf />
+    <!-- <ShowIf /> -->
+    <!-- <FormDemo /> -->
+    <!-- <StyleClass /> -->
+    <!-- <EventDemo /> -->
+    <!-- <PropDemo /> -->
+    <!-- <EventBus /> -->
+    <ToggCom />
   </div>
 </template>
 
 <script>
-// import TmpDemo from './views/TmpDemo'
-// import Computed from './views/Computed'
-// import Watcher from "./views/Watcher"
-// import ForDemo from "./views/ForDemo"
-import ShowIf from "./views/ShowIf"
+// import TmpDemo from 'views/basis/TmpDemo'
+// import Computed from 'views/basis/Computed'
+// import Watcher from "views/basis/Watcher"
+// import ForDemo from "views/basis/ForDemo"
+// import ShowIf from "views/basis/ShowIf"
+// import FormDemo from "views/basis/FormDemo"
+// import StyleClass from "views/basis/StyleClass"
+// import EventDemo from "views/basis/EventDemo"
+// import PropDemo from "views/com/PropDemo"
+// import EventBus from "views/com/EventBus"
+import ToggCom from "views/com/ToggCom"
 
 export default {
   components: {
@@ -21,7 +33,13 @@ export default {
     // Computed,
     // Watcher,
     // ForDemo,
-    ShowIf
+    // ShowIf,
+    // FormDemo,
+    // StyleClass,
+    // EventDemo,
+    // PropDemo,
+    // EventBus,
+    ToggCom
   }
 };
 </script>
