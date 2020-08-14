@@ -16,12 +16,19 @@ export default {
       num: 0
     };
   },
+  mounted() {
+    console.log(123);
+    this.$emit("my_events","first")
+  },
   methods: {
     handleInput(e) {
       this.$emit("input",e.target.value)
     },
     handleClick() {
       this.$emit("myClick",this.num++);
+    },
+    handleEvents(ev) {
+      console.log(ev)
     }
   },
 };

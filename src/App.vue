@@ -10,7 +10,8 @@
     <!-- <EventDemo /> -->
     <!-- <PropDemo /> -->
     <!-- <EventBus /> -->
-    <ToggCom />
+    <!-- <ToggCom /> -->
+    <Directive />
   </div>
 </template>
 
@@ -25,7 +26,8 @@
 // import EventDemo from "views/basis/EventDemo"
 // import PropDemo from "views/com/PropDemo"
 // import EventBus from "views/com/EventBus"
-import ToggCom from "views/com/ToggCom"
+// import ToggCom from "views/com/ToggCom"
+import Directive from "views/common/Directive"
 
 export default {
   components: {
@@ -39,7 +41,8 @@ export default {
     // EventDemo,
     // PropDemo,
     // EventBus,
-    ToggCom
+    // ToggCom,
+    Directive,
   }
 };
 </script>
