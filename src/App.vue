@@ -5,13 +5,16 @@
     <!-- <Watcher /> -->
     <!-- <ForDemo /> -->
     <!-- <ShowIf /> -->
+
     <!-- <FormDemo /> -->
     <!-- <StyleClass /> -->
     <!-- <EventDemo /> -->
     <!-- <PropDemo /> -->
     <!-- <EventBus /> -->
     <!-- <ToggCom /> -->
-    <Directive />
+    <!-- <Directive /> -->
+    <VirtualList :listData="listData" :itemSize="100"></VirtualList>
+    <!-- <List/> -->
   </div>
 </template>
 
@@ -27,25 +30,52 @@
 // import PropDemo from "views/com/PropDemo"
 // import EventBus from "views/com/EventBus"
 // import ToggCom from "views/com/ToggCom"
-import Directive from "views/common/Directive"
-
+// import Directive from "views/common/Directive"
+// import List from "views/basis/List";
+import VirtualList from "./components/VirtualList";
+let arr = [];
+for (var i = 0; i < 100000; i++) {
+  arr.push({
+    id: i,
+    value: i,
+  });
+}
 export default {
+  data() {
+    return {
+      listData: arr,
+    };
+  },
   components: {
-    // TmpDemo,
-    // Computed,
-    // Watcher,
-    // ForDemo,
-    // ShowIf,
-    // FormDemo,
-    // StyleClass,
-    // EventDemo,
-    // PropDemo,
-    // EventBus,
-    // ToggCom,
-    Directive,
-  }
+    VirtualList,
+  },
+  // components: {
+  //   // TmpDemo,
+  //   // Computed,
+  //   // Watcher,
+  //   // ForDemo,
+  //   // ShowIf,
+  //   // FormDemo,
+  //   // StyleClass,
+  //   // EventDemo,
+  //   // PropDemo,
+  //   // EventBus,
+  //   // ToggCom,
+  //   // Directive,
+  //   List,
+  // },
 };
 </script>
 
 <style>
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+}
+#app {
+  height: 100%;
+}
 </style>

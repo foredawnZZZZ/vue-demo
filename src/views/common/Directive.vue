@@ -2,7 +2,7 @@
   <div>
     <p>{{msg}}</p>
     <button v-loading="flag" @click="handleShow">test</button>
-    <Test/>
+    <!-- <Test/> -->
   </div>
 </template>
 
