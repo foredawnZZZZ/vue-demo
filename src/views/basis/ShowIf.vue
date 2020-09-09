@@ -14,6 +14,7 @@
   
        - v-show,不管条件时什么,他都会渲染(设置display属性)
     -->
+
     <template v-if="awesome">
       <h1>Vue is awesome!</h1>
       <p>Paragraph 1</p>
@@ -24,7 +25,6 @@
       <p>Paragraph 3</p>
       <p>Paragraph 4</p>
     </template>
-
     <!-- <template v-show="flag">
       <h1>Vue is awesome! -- show</h1>
       <p>Paragraph 1</p>
@@ -34,31 +34,28 @@
       <h1>Oh no 😢 -- show</h1>
       <p>Paragraph 3</p>
       <p>Paragraph 4</p>
-    </template> -->
-
+    </template>-->
     <h1 v-show="flag">Vue is awesome!</h1>
     <h1 v-show="!flag">Oh no 😢</h1>
-
-    <br />
-    <br />
-    <br />
-    <br />
-
+    <br>
+    <br>
+    <br>
+    <br>
     <template v-if="awesome">
       <label>UserName</label>
-      <input type="text" placeholder="change your username" key="username" />
+      <input type="text" placeholder="change your username" key="username">
     </template>
     <template v-else>
       <label>PassWord</label>
-      <input type="text" placeholder="change your password" key="password" />
+      <input type="text" placeholder="change your password" key="password">
     </template>
-
     <button @click="handleTogAws">toogle</button>
-    <br />
-    <br />
-    <br />
-    <br />
+    <br>
+    <br>
+    <br>
+    <br>
     <button @click="handleTogFlag">toogle</button>
+    <div v-for="item in list" :key="item">{{item}}</div>
   </div>
 </template>
 
@@ -67,17 +64,23 @@ export default {
   data() {
     return {
       awesome: false,
-      flag: false
+      flag: false,
+      ff: true,
+      list: [1,10,2,3,4]
     };
+  },
+  mounted() {
+    this.list.pop();
   },
   methods: {
     handleTogAws() {
+      console.log(this);
       this.awesome = !this.awesome;
     },
     handleTogFlag() {
       this.flag = !this.flag;
     }
-  }
+  },
 };
 </script>
 

@@ -125,6 +125,7 @@ export default {
   methods: {
     toggleView(str) {
       this.currentView = "Com" + str;
+      console.log(this);
     },
   },
   // HAS EL OPTIONS(是否有el选项,有继续向下执行,没有就等待实例执行$mount方法)

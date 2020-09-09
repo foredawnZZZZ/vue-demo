@@ -4,8 +4,7 @@
     <!-- <Computed /> -->
     <!-- <Watcher /> -->
     <!-- <ForDemo /> -->
-    <!-- <ShowIf /> -->
-
+    <ShowIf />
     <!-- <FormDemo /> -->
     <!-- <StyleClass /> -->
     <!-- <EventDemo /> -->
@@ -13,7 +12,7 @@
     <!-- <EventBus /> -->
     <!-- <ToggCom /> -->
     <!-- <Directive /> -->
-    <VirtualList :listData="listData" :itemSize="100"></VirtualList>
+    <!-- <VirtualList :listData="listData" :itemSize="100"></VirtualList> -->
     <!-- <List/> -->
   </div>
 </template>
@@ -23,7 +22,7 @@
 // import Computed from 'views/basis/Computed'
 // import Watcher from "views/basis/Watcher"
 // import ForDemo from "views/basis/ForDemo"
-// import ShowIf from "views/basis/ShowIf"
+import ShowIf from "views/basis/ShowIf"
 // import FormDemo from "views/basis/FormDemo"
 // import StyleClass from "views/basis/StyleClass"
 // import EventDemo from "views/basis/EventDemo"
@@ -32,50 +31,22 @@
 // import ToggCom from "views/com/ToggCom"
 // import Directive from "views/common/Directive"
 // import List from "views/basis/List";
-import VirtualList from "./components/VirtualList";
-let arr = [];
-for (var i = 0; i < 100000; i++) {
-  arr.push({
-    id: i,
-    value: i,
-  });
-}
+
 export default {
-  data() {
-    return {
-      listData: arr,
-    };
-  },
   components: {
-    VirtualList,
+    // TmpDemo,
+    // Computed,
+    // Watcher,
+    // ForDemo,
+    ShowIf
+    // FormDemo,
+    // StyleClass
+    // EventDemo,
+    // PropDemo,
+    // EventBus,
+    // ToggCom,
+    // Directive,
+    // List,
   },
-  // components: {
-  //   // TmpDemo,
-  //   // Computed,
-  //   // Watcher,
-  //   // ForDemo,
-  //   // ShowIf,
-  //   // FormDemo,
-  //   // StyleClass,
-  //   // EventDemo,
-  //   // PropDemo,
-  //   // EventBus,
-  //   // ToggCom,
-  //   // Directive,
-  //   List,
-  // },
 };
 </script>
-
-<style>
-html {
-  height: 100%;
-}
-body {
-  height: 100%;
-  margin: 0;
-}
-#app {
-  height: 100%;
-}
-</style>

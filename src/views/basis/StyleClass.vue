@@ -72,4 +72,5 @@ export default {
   margin 20px;
   display inline-block;
   box-shadow: 10px 10px 5px #888888;
+
 </style>
