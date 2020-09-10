@@ -4,7 +4,8 @@
     <!-- <Computed /> -->
     <!-- <Watcher /> -->
     <!-- <ForDemo /> -->
-    <ShowIf />
+    <!-- <ShowIf /> -->
+
     <!-- <FormDemo /> -->
     <!-- <StyleClass /> -->
     <!-- <EventDemo /> -->
@@ -14,6 +15,9 @@
     <!-- <Directive /> -->
     <!-- <VirtualList :listData="listData" :itemSize="100"></VirtualList> -->
     <!-- <List/> -->
+    <page-top>
+      <router-view></router-view>
+    </page-top>
   </div>
 </template>
 
@@ -22,7 +26,7 @@
 // import Computed from 'views/basis/Computed'
 // import Watcher from "views/basis/Watcher"
 // import ForDemo from "views/basis/ForDemo"
-import ShowIf from "views/basis/ShowIf"
+// import ShowIf from "views/basis/ShowIf"
 // import FormDemo from "views/basis/FormDemo"
 // import StyleClass from "views/basis/StyleClass"
 // import EventDemo from "views/basis/EventDemo"
@@ -38,7 +42,7 @@ export default {
     // Computed,
     // Watcher,
     // ForDemo,
-    ShowIf
+    // ShowIf
     // FormDemo,
     // StyleClass
     // EventDemo,

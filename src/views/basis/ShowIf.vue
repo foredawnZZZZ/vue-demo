@@ -11,10 +11,8 @@
       v-show与v-if的区别
        - v-if是真正的条件渲染,在条件内部的组件里的事件监听和子组件都被不断的创建与销毁(直接在DOM树上干掉了) 
         但是他是惰性的,只有在真值的时候才会去条件渲染
-  
        - v-show,不管条件时什么,他都会渲染(设置display属性)
     -->
-
     <template v-if="awesome">
       <h1>Vue is awesome!</h1>
       <p>Paragraph 1</p>
@@ -66,7 +64,7 @@ export default {
       awesome: false,
       flag: false,
       ff: true,
-      list: [1,10,2,3,4]
+      list: [1, 10, 2, 3, 4],
     };
   },
   mounted() {
@@ -79,7 +77,7 @@ export default {
     },
     handleTogFlag() {
       this.flag = !this.flag;
-    }
+    },
   },
 };
 </script>
